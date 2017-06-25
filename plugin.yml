@@ -1,0 +1,6 @@
+name: "TestPlugin"
+main: Ragnok123.ExtraPerms.ExtraPerms
+api: ["1.0.0"]
+version: "1.0"
+author: "Ragnok123"
+
