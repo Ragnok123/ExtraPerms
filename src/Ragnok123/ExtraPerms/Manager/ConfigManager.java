@@ -20,10 +20,10 @@ public class ConfigManager
 	
 	public void createData(String username)
 	{
+		HashMap<String, String> rankData = new HashMap<String, String>();
 		HashMap<String, HashMap<String, String>> data = new HashMap<String, HashMap<String, String>>();
-		HashMap<String, String> seconddata = new HashMap<String, String>();
-		seconddata.put("rank", "user");
-		data.put(username, seconddata);
+		rankData.put("rank", "user");
+		data.put(player.getName().toLowerCase(), rankData);
 		File file = new File(ExtraPerms.getInstance().getDataFolder() + "rankmanager.yml");
 		Config config = new Config(file, Config.YAML);
 		config.set("users", data);

@@ -13,7 +13,7 @@ import cn.nukkit.event.Listener;
 public class ExtraPerms extends PluginBase implements Listener
 {
 	
-	public ExtraPerms instance;
+	public static ExtraPerms instance;
 	public ConfigManager groupmanager;
 	
 	@Override
