@@ -23,11 +23,22 @@ public class ConfigManager
 		HashMap<String, String> rankData = new HashMap<String, String>();
 		HashMap<String, HashMap<String, String>> data = new HashMap<String, HashMap<String, String>>();
 		rankData.put("rank", "user");
-		data.put(player.getName().toLowerCase(), rankData);
+		data.put(username.toLowerCase(), rankData);
 		File file = new File(ExtraPerms.getInstance().getDataFolder() + "rankmanager.yml");
 		Config config = new Config(file, Config.YAML);
 		config.set("users", data);
 		config.save();
+	}
+	
+	public boolean accExists(String username)
+	{
+		File file = new File(ExtraPerms.getInstance().getDataFolder() + "rankmanager.yml");
+		Config config = new Config(file, Config.YAML);
+		if(config.getString("users." + username) != null)
+		{
+			return true;
+		}
+	return false;
 	}
 	
 	
