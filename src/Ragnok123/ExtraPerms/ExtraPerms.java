@@ -14,11 +14,12 @@ public class ExtraPerms extends PluginBase implements Listener
 {
 	
 	public ExtraPerms instance;
+	public ConfigManager groupmanager;
 	
 	@Override
 	public void onEnable()
 	{
-		
+		groupmanager = new ConfigManager(this);
 	}
 	
 	public static ExtraPerms getInstance()
