@@ -1,6 +1,11 @@
-name: "TestPlugin"
+name: "ExtraPerms"
 main: Ragnok123.ExtraPerms.ExtraPerms
 api: ["1.0.0"]
 version: "1.0"
 author: "Ragnok123"
+load: STARTUP
+description: Permission plugin for nukkit
+website: https://github.com/Ragnok123/ExtraPerms
+
+
 
